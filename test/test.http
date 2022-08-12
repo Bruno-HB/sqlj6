@@ -1,0 +1,7 @@
+@hostname = http://localhost:3000/v1
+
+GET {{hostname}}/cadex
+
+### séparateur entre deux requêtes
+
+POST {{hostname}}/cadex
