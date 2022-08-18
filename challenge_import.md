@@ -10,7 +10,7 @@ Cela consiste à réaliser trois étapes :
 
 - parcourir le fichier .json
 - se connecter à la base de données
-- infectuer le ou les INSERT
+- effectuer le ou les INSERT
 
 ## Pourquoi le ou les INSERT ?
 
