@@ -5,3 +5,9 @@ GET {{hostname}}/cadex
 ### séparateur entre deux requêtes
 
 POST {{hostname}}/cadex
+content-type: application/json
+
+{
+    "name": "sample",
+    "verb":"sert"
+}

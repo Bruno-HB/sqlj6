@@ -1,10 +1,17 @@
 const express = require('express');
 const cadexController = require("../controller/cadex");
-
+const validationModule = require('../validation/validation');
+const {cadexSchema} = require("../validation/schema");
 const router = express.Router();
 
-// middleware that is specific to this router
-router.get("/v1/cadex",cadexController.getCadex);
+// http://localhost:3000/cadex
+/**
+ * GET /v1/cadex
+ * @summary Génère un cadex
+ * @tags GET
+ * @return {Cadex} 200 - success response - application/json
+ */
+router.get("/v1/cadex",validationModule.validateQuery(cadexSchema),cadexController.getCadex);
 
 // gestion de la 404
 
